@@ -1,0 +1,67 @@
+
+
+.container {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: minmax(80px, auto) repeat(5, 80px);
+    min-height: 100vh;
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+    font-size: 20px;
+    background-color: white;
+    border: 3px solid black;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+.output {
+    grid-column: 1 / -1;
+    background-color: black;
+    word-wrap: break-word;
+    word-break: break-all;
+    -ms-word-break: break-all;
+    -ms-word-wrap: break-word;
+}
+
+.top_output {
+    background-color: black;
+    color: white;
+    padding-right: 10px;
+    padding: 10px;
+    text-align: end;
+    font-size: 20px;
+    color: rgba(225, 225, 225, 100);
+    min-height: 25px;
+}
+
+.bottom_output {
+    background-color: black;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    min-height: 25px;
+}
+
+.mid_output {
+    padding: 20px;
+    text-align: end;
+    font-size: 30px;
+    color: white;
+    min-height: 50px;
+}
+
+.title {
+    text-align: center;
+    height: 40px;
+    padding-top: 10px;
+    font-size: 25px;
+    color: white;
+}
